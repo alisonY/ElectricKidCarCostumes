@@ -70,7 +70,7 @@ void setup()
   pinMode(switchPin1, INPUT_PULLUP);
   pinMode(escPin, OUTPUT); //设定舵机接口为输出接口
   Serial.begin(9600);
-  Serial.println("hello world,tel:416800698" ) ;
+  Serial.println("hello world,QQ:416800698" ) ;
 
   offsetMin = expectMax - throPadMin;
   offsetMax = throPadMax - throPadMin;
