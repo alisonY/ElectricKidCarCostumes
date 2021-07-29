@@ -73,16 +73,6 @@ void getSwitchStat() {
   }
 }
 
-//根据油门调节电位器设置最大油门量
-void setOffset(int adjVal) {
-  adjustVal = (float)adjVal+480/1503;//百分化
-  expectMaxFloat = (int)(expectMax*(float)adjustVal);
-  expectMax = round(expectMaxFloat);//<--------------------------
-  offsetMin = expectMax - throPadMin;
-  offsetMax = throPadMax - throPadMin;
-  offset = (float)offsetMin / offsetMax;
-}
-
 //servopulse函数部分到此结束
 void setup()
 {
